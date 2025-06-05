@@ -1,0 +1,39 @@
+.account-skeleton {
+    @apply flex flex-col md:flex-row md:space-x-5 md:space-x-reverse;
+
+    .page-sidebar {
+        @apply w-full md:w-80 md:min-w-80;
+
+        .navigation {
+            @apply flex flex-row md:flex-col md:divide-y md:divide-neutral-200;
+
+            .item {
+                @apply flex items-center justify-center md:justify-start hover:bg-neutral-50/60 px-0 md:px-5 py-3 flex-1 basis-0;
+
+                &[data-active="true"] {
+                    @apply bg-neutral-50 font-semibold;
+
+                    .fi {
+                        @apply text-danger md:text-current;
+                    }
+                }
+
+                .label {
+                    @apply hidden md:flex mr-3;
+                }
+
+                .badge {
+                    @apply mr-2 md:mr-auto px-2 md:px-[10px];
+                }
+
+                .fi {
+                    @apply text-lg md:text-base;
+                }
+            }
+        }
+    }
+
+    .page-content {
+        @apply flex-1 min-w-0 mt-5 md:mt-0;
+    }
+}

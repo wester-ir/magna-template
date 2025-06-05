@@ -1,0 +1,20 @@
+{
+    "name": "magna",
+    "display_name": {
+        "en": "Magna",
+        "fa": "مگنا"
+    },
+    "authors": [
+        {
+            "name": "Wester",
+            "url": "https:\/\/wester.ir"
+        }
+    ],
+    "dependencies": {
+        "wester": "1.0.0|1.1.0"
+    },
+    "screenshot": "screenshot.png",
+    "version": "1.0.0",
+    "github": "https:\/\/github.com\/wester-ir\/magna-template",
+    "patch": 1
+}

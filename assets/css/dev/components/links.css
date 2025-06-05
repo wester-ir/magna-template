@@ -1,0 +1,3 @@
+a.default {
+    @apply text-black hover:text-neutral-600;
+}

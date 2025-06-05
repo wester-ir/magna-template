@@ -1,0 +1,155 @@
+/** Vazirmatn **/
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn UI FD;
+    src: url('/content/templates/magna/assets/fonts/vazir/Vazirmatn-UI-FD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Thin.0e2899a5.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Thin.ef8fd7b9.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Light.ab09bc65.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Light.0cd12378.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Regular.cf2a9512.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Regular.a52ed951.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-SemiBold.231e26fb.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-SemiBold.54f096a7.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Bold.93006216.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Bold.9c90097f.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 800;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-ExtraBold.bd1a95d1.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-ExtraBold.62047917.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 900;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Black.6aa8e6a9.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-Black.69082471.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 950;
+    src: url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-ExtraBlack.5ed826f1.woff) format("woff"),url(/content/templates/magna/assets/fonts/yekan/YekanBakhFaNum-ExtraBlack.3797b5fb.woff2) format("woff2")
+}
+
+
+
+/** Inter **/
+/*@font-face {*/
+/*    font-family: Inter;*/
+/*    font-style: normal;*/
+/*    font-weight: 100 900;*/
+/*    font-display: swap;*/
+/*    src: url('/public/assets/fonts/inter/InterVariable.woff2?v=4.0') format('woff2');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: Inter;*/
+/*    font-style: italic;*/
+/*    font-weight: 100 900;*/
+/*    font-display: swap;*/
+/*    src: url('/public/assets/fonts/inter/InterVariable-Italic.woff2?v=4.0') format('woff2');*/
+/*}*/
+
+.font-latin {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: .8125rem;
+    font-feature-settings: "calt" 0;
+}

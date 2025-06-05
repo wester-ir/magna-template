@@ -1,0 +1,19 @@
+.alert {
+    @apply flex items-center px-5 py-4 rounded-md;
+
+    &.alert-success {
+        @apply bg-green-200;
+    }
+
+    &.alert-info {
+        @apply bg-sky-100;
+    }
+
+    &.alert-danger {
+        @apply bg-red-100;
+    }
+
+    > .alert-close {
+        @apply flex ms-auto ps-4;
+    }
+}

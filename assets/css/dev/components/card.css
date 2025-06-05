@@ -1,0 +1,49 @@
+@layer components {
+    .card {
+        @apply border border-neutral-200 rounded-md;
+
+        .card-header {
+            @apply p-5 pb-0;
+
+            .card-title {
+                @apply text-lg font-semibold;
+            }
+        }
+
+        .card-content {
+            @apply p-5;
+        }
+
+        .card-tabs {
+            @apply flex overflow-x-auto hide-scrollbar border-b;
+
+            .card-tab {
+                @apply flex items-center justify-center text-neutral-600 hover:text-red-500 text-center text-sm relative py-3 mx-5 whitespace-nowrap transition-colors;
+
+                .badge {
+                    @apply bg-neutral-500 text-white transition-colors;
+                }
+
+                &:hover {
+                    .badge {
+                        @apply bg-red-500;
+                    }
+                }
+
+                &[data-active="true"] {
+                    @apply text-red-500;
+
+                    &::after {
+                        @apply block absolute bottom-0 left-0 right-0 bg-red-500 rounded-t-lg h-1;
+
+                        content: '';
+                    }
+
+                    .badge {
+                        @apply bg-red-500;
+                    }
+                }
+            }
+        }
+    }
+}
