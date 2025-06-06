@@ -235,7 +235,7 @@
                                 @if (! $paymentMethods->isEmpty())
                                     <div class="space-y-3">
                                         @foreach ($paymentMethods as $paymentMethod)
-                                            <label class="flex items-center">
+                                            <label class="flex items-center" data-role="payment-method" data-id="{{ $paymentMethod->id }}">
                                                 <input type="radio" name="payment_method" value="{{ $paymentMethod->id }}" @checked($paymentMethod->is_default)>
                                                 <span class="mr-3">{{ $paymentMethod->title }}</span>
 
@@ -302,8 +302,9 @@
                 $('[data-role="loading"]').remove();
                 $('[data-role="container"]').removeClass('hidden');
 
-                if (data.total_final_price > {{ $walletBalance }}) {
-                    $('[data-role="wallet-payment"]').remove();
+                if (data.invoice.payable_amount > {{ $walletBalance }}) {
+                    $('[data-role="payment-method"][data-id="wallet"]').attr('data-disabled', true);
+                    $('[name="payment_method"][value="wallet"]').prop('checked', false);
                 }
 
                 // Discount
