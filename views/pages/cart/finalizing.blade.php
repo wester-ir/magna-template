@@ -305,6 +305,8 @@
                 if (data.invoice.payable_amount > {{ $walletBalance }}) {
                     $('[data-role="payment-method"][data-id="wallet"]').attr('data-disabled', true);
                     $('[name="payment_method"][value="wallet"]').prop('checked', false);
+                } else {
+                    $('[data-role="payment-method"][data-id="wallet"]').removeAttr('data-disabled');
                 }
 
                 // Discount
