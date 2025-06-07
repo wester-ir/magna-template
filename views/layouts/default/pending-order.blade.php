@@ -21,7 +21,9 @@
                         </div>
 
                         <div class="flex items-center space-x-4 space-x-reverse sm:mr-5 mt-3 sm:mt-0">
-                            <a href="{{ route('client.account.orders.order.index', $order) }}" class="text-sm font-bold">مشاهده</a>
+                            @auth
+                                <a href="{{ route('client.account.orders.order.index', $order) }}" class="text-sm font-bold">مشاهده</a>
+                            @endauth
 
                             <form action="{{ route('client.cart.finalizing.order.cancel', $order) }}" method="POST" data-role="cancel-purchase-form">
                                 @csrf
