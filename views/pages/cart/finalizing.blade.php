@@ -275,6 +275,7 @@
 
                 $form.remove();
                 $('[data-role="discount-applied"]').show();
+                getStatsWithParams();
             } catch (e) {
                 form.handleRequestError(e, {
                     404: () => toast.error('کد تخفیف مورد نظر یافت نشد.'),

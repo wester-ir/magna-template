@@ -645,7 +645,7 @@ textarea.default {
     --tw-bg-opacity: 1;
     background-color: rgb(224 242 254 / var(--tw-bg-opacity, 1));
 }
-.alert.alert-danger {
+.alert.alert-error {
     --tw-bg-opacity: 1;
     background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
 }
@@ -1560,9 +1560,6 @@ video {
 .w-10 {
     width: 2.5rem !important;
 }
-.w-11 {
-    width: 2.75rem !important;
-}
 .w-12 {
     width: 3rem !important;
 }
@@ -1671,9 +1668,6 @@ video {
 }
 .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-}
-.flex-row {
-    flex-direction: row !important;
 }
 .flex-row-reverse {
     flex-direction: row-reverse !important;
