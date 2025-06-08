@@ -9,12 +9,10 @@
 
 @section('content')
     <div class="main">
-        <div class="container">
-            <!-- Banner -->
-            <section>
-                <img src="{{ template_asset('/assets/images/banners/1.jpg') }}" class="rounded">
-            </section>
+        <!-- Banner -->
+         @template_include('views.pages._partials.index.banner')
 
+        <div class="container">
             <div class="space-y-10 mt-8">
                 @if ($discountedProducts->isNotEmpty())
                     <!-- Discounted Products -->

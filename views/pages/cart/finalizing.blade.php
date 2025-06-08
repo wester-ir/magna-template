@@ -17,7 +17,7 @@
 
                 <div class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-3 md:space-x-reverse">
                     <div class="flex-1 space-y-3">
-                        @if (auth()->check() && config('features.discount') && settings('cart')['discount'])
+                        @if (auth()->check() && feature('discount') && settings('cart')['discount'])
                             <!-- Apply discount -->
                             <div class="card">
                                 <div class="card-header">

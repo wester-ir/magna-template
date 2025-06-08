@@ -15,7 +15,7 @@
         <div class="container">
             <div class="flex flex-col sm:flex-row">
                 <!-- Images -->
-                @template_include('views.pages.product.partials.images')
+                @template_include('views.pages._partials.product.images')
 
                 <div class="sm:mr-5 mt-5 sm:mt-0 flex-1">
                     <div class="flex">
@@ -75,21 +75,21 @@
                         </div>
                     @endif
 
-                    @template_include('views.pages.product.partials.add-to-cart')
+                    @template_include('views.pages._partials.product.add-to-cart')
                 </div>
             </div>
 
             <div class="mt-5">
-                @template_include('views.pages.product.partials.tabs')
+                @template_include('views.pages._partials.product.tabs')
             </div>
 
             @if ($product->is_commentable)
                 <div class="mt-10">
-                    @template_include('views.pages.product.partials.comments')
+                    @template_include('views.pages._partials.product.comments')
                 </div>
             @endif
 
-            @template_include('views.pages.product.partials.related-products')
+            @template_include('views.pages._partials.product.related-products')
         </div>
     </div>
 @endsection
