@@ -9,7 +9,7 @@
                     <img src="{{ template_asset('/assets/images/user.png') }}" class="w-14 h-14 shadow rounded-full">
 
                     <div class="mr-3">
-                        <div class="font-semibold" data-role="users-full-name">{{ auth()->user()->full_name ?: 'نام کاربری' }}</div>
+                        <div class="font-semibold" data-role="users-full-name">{{ auth()->user()->full_name ?: 'بدون نام' }}</div>
                         <div class="text-neutral-500 mt-1">{{ auth()->user()->number }}</div>
                     </div>
                 </div>
