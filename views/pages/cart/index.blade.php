@@ -170,8 +170,8 @@
                             '<button class="trigger" data-role="cart-refresh"><i class="fi-rr-refresh flex"></i></button>' :
                             '<button class="trigger" data-role="cart-increase" '+ (item.is_max_qty_reached ? 'disabled' : '') +'><i class="fi-rr-plus flex"></i></button>'
                         )+
-                        '<div class="w-auto flex-1" data-role="cart-quantity">'+ item.quantity_in_cart +'</div>'+
-                        (item.quantity_in_cart > item.amount_per_sale && ! item.is_max_qty_exceeded ?
+                        '<div class="w-auto flex-1" data-role="cart-quantity">'+ item.quantity +'</div>'+
+                        (item.quantity > item.amount_per_sale && ! item.is_max_qty_exceeded ?
                             '<button class="trigger" data-role="cart-decrease"><i class="fi-rr-minus flex"></i></button>' :
                             '<button class="trigger" data-role="cart-remove"><i class="fi-rr-trash flex"></i></button>'
                         )+
