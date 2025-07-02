@@ -12,7 +12,7 @@
 
                     <div class="flex flex-col sm:flex-row items-center lg:ms-auto mt-3 lg:mt-0">
                         <div class="bg-white sm:bg-transparent rounded-md flex items-center px-3 py-2 sm:px-0 sm:py-0">
-                            <div class="text-center font-medium">{{ number_format($order->invoice->total_amount) }} {{ productCurrency()->label() }}</div>
+                            <div class="text-center font-medium">{{ number_format($order->invoice->total_amount) }} {{ currency()->label() }}</div>
                             <div class="w-px h-4 bg-neutral-400 mx-3"></div>
                             <div class="flex items-center text-sm text-danger font-medium">
                                 <div class="hidden 2xs:block ml-1.5">زمان باقی مانده:</div>

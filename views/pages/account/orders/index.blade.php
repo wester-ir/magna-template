@@ -94,7 +94,7 @@
                                 @endif
                                 <div class="flex items-center justify-between md:justify-start">
                                     <span class="font-light text-neutral-400">مبلغ</span>
-                                    <span class="font-medium mr-2">{{ number_format($order->invoice->total_amount) }} {{ productCurrency()->label() }}</span>
+                                    <span class="font-medium mr-2">{{ number_format($order->invoice->paid_amount) }} {{ currency()->label() }}</span>
                                 </div>
                             </div>
 

@@ -145,7 +145,7 @@
             <div class="flex items-center justify-between md:justify-start">
                 <span class="font-light text-neutral-400">مبلغ</span>
                 <span
-                    class="font-medium mr-2">{{ number_format($order->invoice->total_amount) }} {{ productCurrency()->label() }}</span>
+                    class="font-medium mr-2">{{ number_format($order->invoice->paid_amount) }} {{ currency()->label() }}</span>
             </div>
 
             <div class="flex items-center justify-between md:justify-start">
@@ -159,7 +159,7 @@
                 <span class="font-light text-neutral-400">هزینه ارسال</span>
                 <span class="font-medium text-neutral-600 mr-2">
                     @if ($order->invoice->shipping_cost > 0)
-                        {{ number_format($order->invoice->shipping_cost) }} {{ productCurrency()->label() }}
+                        {{ number_format($order->invoice->shipping_cost) }} {{ currency()->label() }}
                     @else
                         رایگان
                     @endif
@@ -231,9 +231,9 @@
 
                         <div>
                             <div
-                                class="text-neutral-500 text-sm">{{ number_format($item->unit_price) }} {{ productCurrency()->label() }}</div>
+                                class="text-neutral-500 text-sm">{{ number_format($item->price) }} {{ currency()->label() }}</div>
                             <div
-                                class="font-medium mt-1">{{ number_format($item->total_price) }} {{ productCurrency()->label() }}</div>
+                                class="font-medium mt-1">{{ number_format($item->final_price) }} {{ currency()->label() }}</div>
                         </div>
                     </div>
                 </div>

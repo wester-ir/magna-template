@@ -160,7 +160,7 @@
                                                 <div class="flex-1 ms-3">
                                                     <div class="flex justify-between">
                                                         <div class="text-sm font-medium">{{ $courier->name }}</div>
-                                                        <div class="text-sm font-medium">{{ number_format($courier->cost) }} {{ productCurrency()->label() }}</div>
+                                                        <div class="text-sm font-medium">{{ number_format($courier->cost) }} {{ currency()->label() }}</div>
                                                     </div>
                                                     <div class="mt-1">
                                                         <div class="text-sm">{{ $courier->type->label() }}</div>
