@@ -24,7 +24,7 @@
                     </div>
                     <div class="flex items-center justify-between flex-1">
                         <span class="label">کیف پول</span>
-                        <span class="label">{{ number_format(auth()->user()->wallet->balance) }}</span>
+                        <span class="label ltr-direction">{{ number_format(auth()->user()->wallet->balance) }}</span>
                     </div>
                 </a>
             @endif
