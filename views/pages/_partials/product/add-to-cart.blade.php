@@ -157,7 +157,6 @@
 
                 handleCartErrors(data.result);
             }, (e) => {
-                console.log(e)
                 unknownError();
             },
             () => {
