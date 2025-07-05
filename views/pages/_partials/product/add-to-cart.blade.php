@@ -156,7 +156,8 @@
                 combinationManager.updateCart(id, data.result.data);
 
                 handleCartErrors(data.result);
-            }, () => {
+            }, (e) => {
+                console.log(e)
                 unknownError();
             },
             () => {

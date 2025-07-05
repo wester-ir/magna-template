@@ -201,7 +201,7 @@
                                     <div class="flex items-start justify-between">
                                         <div class="text-neutral-600">تخفیف</div>
                                         <div class="text-neutral-600">
-                                            <span data-role="cart-invoice-discount-amount"></span>
+                                            <span data-role="cart-external-discount"></span>
                                             <span class="mr-0.5">تومان</span>
                                         </div>
                                     </div>
@@ -209,7 +209,7 @@
                                     <div class="flex items-start justify-between">
                                         <div class="text-neutral-600">مالیات</div>
                                         <div class="text-neutral-600">
-                                            <span data-role="cart-total-tax-amount"></span>
+                                            <span data-role="cart-total-tax"></span>
                                             <span class="mr-0.5">تومان</span>
                                         </div>
                                     </div>
