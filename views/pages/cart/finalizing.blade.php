@@ -261,7 +261,18 @@
 
 @push('bottom-scripts')
     <script>
+        function lockPage(locked = true) {
+            $('[data-role="cart-finalize"]').prop('disabled', locked);
+            $('[data-role="invoice"]').attr('data-disabled', locked);
+        }
+
+        function unlockPage() {
+            lockPage(false);
+        }
+
         $('#apply-discount').on('click', async function () {
+            lockPage();
+
             const form = new FormManager('[data-role="discount-form"]');
             const $form = $('[data-role="discount-form"]');
 
@@ -283,11 +294,11 @@
             }
 
             $form.removeAttr('data-disabled');
+            unlockPage();
         });
 
         async function getStats(province_id, city_id) {
-            $('[data-role="cart-finalize"]').prop('disabled', true);
-            $('[data-role="invoice"]').attr('data-disabled', true);
+            lockPage();
 
             try {
                 const { data } = await axios.get(API.cart.details, {
@@ -315,7 +326,7 @@
                 data.invoice.is_discount_applied && $('[data-role="discount-form"]').remove();
             } catch {}
 
-            $('[data-role="invoice"]').attr('data-disabled', false);
+            unlockPage();
         }
 
         function initProvince() {
@@ -441,13 +452,13 @@
             initCity();
             initManualAddress();
 
-            $('#finalizing-form').submit(function () {
+            document.getElementById('finalizing-form').onsubmit = function () {
                 validateForm(
                     $(this)
                 );
 
                 return false;
-            });
+            };
         }
 
         init();
