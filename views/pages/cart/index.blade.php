@@ -67,7 +67,7 @@
                                     <div class="flex items-start justify-between">
                                         <div class="text-neutral-600">سود از خرید</div>
                                         <div class="text-neutral-600">
-                                            <span data-role="cart-total-discount-amount"></span>
+                                            <span data-role="cart-total-discount"></span>
                                             <span class="mr-0.5">تومان</span>
                                         </div>
                                     </div>
