@@ -183,7 +183,7 @@
 
                 <div class="flex">
                     <div>
-                        @if ($item->combination?->relationLoaded('image') && $item->combination->image)
+                        @if ($item->combination?->is_image_available)
                             <a href="{{ $item->product?->url ?: '#' }}">
                                 <img src="{{ $item->combination->image['url']['thumbnail'] }}"
                                     class="w-24 h-24 object-cover rounded-md"
