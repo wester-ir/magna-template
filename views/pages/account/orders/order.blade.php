@@ -149,6 +149,12 @@
             </div>
 
             <div class="flex items-center justify-between md:justify-start">
+                <span class="font-light text-neutral-400">تخفیف</span>
+                <span
+                    class="font-medium mr-2">{{ number_format($order->invoice->external_discount) }} {{ currency()->label() }}</span>
+            </div>
+
+            <div class="flex items-center justify-between md:justify-start">
                 <span class="font-light text-neutral-400">ارسال توسط</span>
                 <span class="font-medium text-neutral-600 mr-2">
                     {{ $order->meta['courier']['name'] }} ({{ $order->meta['courier']['type'] }})
@@ -233,7 +239,7 @@
                             <div
                                 class="text-neutral-500 text-sm">{{ number_format($item->price) }} {{ currency()->label() }}</div>
                             <div
-                                class="font-medium mt-1">{{ number_format($item->final_price) }} {{ currency()->label() }}</div>
+                                class="font-medium mt-1">{{ number_format($item->total_price) }} {{ currency()->label() }}</div>
                         </div>
                     </div>
                 </div>
