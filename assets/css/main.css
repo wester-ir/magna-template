@@ -3083,6 +3083,9 @@ option[data-role="variant-item"][data-available="false"] {
     .lg\:items-center {
         align-items: center !important;
     }
+    .lg\:justify-start {
+        justify-content: flex-start !important;
+    }
     .lg\:justify-between {
         justify-content: space-between !important;
     }
@@ -3090,6 +3093,16 @@ option[data-role="variant-item"][data-available="false"] {
         --tw-space-x-reverse: 0 !important;
         margin-right: calc(1.25rem * var(--tw-space-x-reverse)) !important;
         margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse))) !important;
+    }
+    .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0 !important;
+        margin-right: calc(1.5rem * var(--tw-space-x-reverse)) !important;
+        margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse))) !important;
+    }
+    .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0 !important;
+        margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse))) !important;
+        margin-bottom: calc(0px * var(--tw-space-y-reverse)) !important;
     }
     .lg\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
         --tw-space-x-reverse: 1 !important;

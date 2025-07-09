@@ -141,27 +141,27 @@
         <hr>
 
         <div
-            class="card-content flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-6 md:space-x-reverse text-sm">
-            <div class="flex items-center justify-between md:justify-start">
+            class="card-content flex flex-col lg:flex-row lg:items-center space-y-3 lg:space-y-0 lg:space-x-6 lg:space-x-reverse text-sm">
+            <div class="flex items-center justify-between lg:justify-start">
                 <span class="font-light text-neutral-400">مبلغ</span>
                 <span
                     class="font-medium mr-2">{{ number_format($order->invoice->paid_amount) }} {{ currency()->label() }}</span>
             </div>
 
-            <div class="flex items-center justify-between md:justify-start">
+            <div class="flex items-center justify-between lg:justify-start">
                 <span class="font-light text-neutral-400">تخفیف</span>
                 <span
                     class="font-medium mr-2">{{ number_format($order->invoice->external_discount) }} {{ currency()->label() }}</span>
             </div>
 
-            <div class="flex items-center justify-between md:justify-start">
+            <div class="flex items-center justify-between lg:justify-start">
                 <span class="font-light text-neutral-400">ارسال توسط</span>
                 <span class="font-medium text-neutral-600 mr-2">
                     {{ $order->meta['courier']['name'] }} ({{ $order->meta['courier']['type'] }})
                 </span>
             </div>
 
-            <div class="flex items-center justify-between md:justify-start">
+            <div class="flex items-center justify-between lg:justify-start">
                 <span class="font-light text-neutral-400">هزینه ارسال</span>
                 <span class="font-medium text-neutral-600 mr-2">
                     @if ($order->invoice->shipping_cost > 0)
