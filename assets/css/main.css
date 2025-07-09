@@ -2408,6 +2408,7 @@ header > nav .navbar-category-dropdown {
     right: 0px;
     left: 0px;
     max-height: 18rem;
+    min-height: 200px;
     width: 100%;
     overflow: hidden;
     border-bottom-right-radius: 0.5rem;

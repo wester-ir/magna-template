@@ -131,7 +131,7 @@ header {
         }
 
         .navbar-category-dropdown {
-            @apply bg-white absolute right-0 left-0 shadow w-full rounded-b-lg max-h-72 overflow-hidden;
+            @apply bg-white absolute right-0 left-0 shadow w-full rounded-b-lg min-h-[200px] max-h-72 overflow-hidden;
 
             .category-parents {
                 @apply w-36 md:w-52 min-h-0 overflow-auto;
