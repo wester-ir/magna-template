@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="md:w-80">
-                        <div class="card">
+                        <div class="card" data-role="stats">
                             <div class="card-content text-sm">
                                 <div class="space-y-3">
                                     <div class="flex items-start justify-between">
@@ -234,6 +234,8 @@
         }
 
         $(document).on('click', '[data-role="cart-refresh"]', function () {
+            lockPage();
+
             const panel = $(this).closest('[data-role="cart-panel"]');
             const pid = panel.data('product-id');
             const cid = panel.data('combination-id');
@@ -249,11 +251,13 @@
             }, () => {
                 unknownError();
             }, () => {
-
+                unlockPage();
             });
         });
 
         $(document).on('click', '[data-role="cart-increase"]', function () {
+            lockPage();
+
             const panel = $(this).closest('[data-role="cart-panel"]');
             const pid = panel.data('product-id');
             const cid = panel.data('combination-id');
@@ -267,11 +271,13 @@
             }, () => {
                 unknownError();
             }, () => {
-
+                unlockPage();
             });
         });
 
         $(document).on('click', '[data-role="cart-decrease"]', function () {
+            lockPage();
+
             const panel = $(this).closest('[data-role="cart-panel"]');
             const pid = panel.data('product-id');
             const cid = panel.data('combination-id');
@@ -289,12 +295,14 @@
             }, () => {
                 unknownError();
             }, () => {
-
+                unlockPage();
             });
         });
 
         $(document).on('click', '[data-role="cart-remove"]', function () {
             modal.defaults.confirmDanger(() => {
+                lockPage();
+
                 const panel = $(this).closest('[data-role="cart-item"]');
                 const pid = panel.data('product-id');
                 const cid = panel.data('combination-id');
@@ -308,13 +316,15 @@
                 }, () => {
                     unknownError();
                 }, () => {
-
+                    unlockPage();
                 });
             });
         });
 
         $(document).on('click', '[data-role="cart-clear"]', function () {
             modal.defaults.confirmDanger(() => {
+                lockPage();
+
                 cartManager.clear((data) => {
                     cartManager.renderItems();
                 }, (data) => {
@@ -322,13 +332,21 @@
                 }, () => {
                     unknownError();
                 }, () => {
-
+                    unlockPage();
                 });
             });
         });
 
         function unknownError() {
             toast.error('خطایی رخ داد.');
+        }
+
+        function lockPage(locked = true) {
+            $('[data-role="stats"]').attr('data-disabled', locked);
+        }
+
+        function unlockPage() {
+            lockPage(false);
         }
     </script>
 @endpush
