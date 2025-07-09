@@ -192,7 +192,7 @@
                     return '<span class="text-danger text-sm">موجودی کافی نیست</span>';
                 }
 
-                return formatNumber(item.final_price) +' تومان';
+                return formatNumber(item.total_price) +' تومان';
             }
 
             items.forEach(item => {
