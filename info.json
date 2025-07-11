@@ -11,9 +11,9 @@
         }
     ],
     "dependencies": {
-        "wester": "1.0.0|1.1.0"
+        "wester": "1.1.0|*"
     },
     "screenshot": "screenshot.png",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "github": "https:\/\/github.com\/wester-ir\/magna-template"
 }
