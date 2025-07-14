@@ -40,27 +40,27 @@
 
                         @if (isset($socialNetworks['telegram']))
                             <a href="{{ $socialNetworks['telegram'] }}" target="_blank">
-                                <img src="{{ template_asset('/assets/img/icons/telegram.svg') }}" class="w-8 h-8">
+                                <img src="{{ template_asset('/assets/images/icons/telegram.svg') }}" class="w-8 h-8">
                             </a>
                         @endif
                         @if (isset($socialNetworks['instagram']))
                             <a href="{{ $socialNetworks['instagram'] }}" target="_blank">
-                                <img src="{{ template_asset('/assets/img/icons/instagram.svg') }}" class="w-8 h-8">
+                                <img src="{{ template_asset('/assets/images/icons/instagram.svg') }}" class="w-8 h-8">
                             </a>
                         @endif
                         @if (isset($socialNetworks['facebook']))
                             <a href="{{ $socialNetworks['facebook'] }}" target="_blank">
-                                <img src="{{ template_asset('/assets/img/icons/facebook.svg') }}" class="w-8 h-8">
+                                <img src="{{ template_asset('/assets/images/icons/facebook.svg') }}" class="w-8 h-8">
                             </a>
                         @endif
                         @if (isset($socialNetworks['twitter']))
                             <a href="{{ $socialNetworks['twitter'] }}" target="_blank">
-                                <img src="{{ template_asset('/assets/img/icons/twitter.svg') }}" class="w-6 h-6">
+                                <img src="{{ template_asset('/assets/images/icons/twitter.svg') }}" class="w-6 h-6">
                             </a>
                         @endif
                         @if (isset($socialNetworks['whatsapp']))
                             <a href="{{ $socialNetworks['whatsapp'] }}" target="_blank">
-                                <img src="{{ template_asset('/assets/img/icons/whatsapp.svg') }}" class="w-9 h-9">
+                                <img src="{{ template_asset('/assets/images/icons/whatsapp.svg') }}" class="w-9 h-9">
                             </a>
                         @endif
                     </div>
